@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hevttc.workbench.notice.mapper.NoticeMapper">
+  <resultMap id="BaseResultMap" type="edu.hevttc.domain.Notice">
+    <!--@mbg.generated-->
+    <!--@Table t_notice-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="urole" jdbcType="CHAR" property="urole" />
+    <result column="publisher" jdbcType="VARCHAR" property="publisher" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="release_time" jdbcType="DATE" property="releaseTime" />
+    <result column="caution_college" jdbcType="VARCHAR" property="cautionCollege" />
+    <result column="caution_major" jdbcType="VARCHAR" property="cautionMajor" />
+    <result column="caution_class" jdbcType="VARCHAR" property="cautionClass" />
+    <result column="caution_year" jdbcType="VARCHAR" property="cautionYear" />
+    <result column="caution_student" jdbcType="VARCHAR" property="cautionStudent" />
+    <result column="isAck" jdbcType="VARCHAR" property="isAck" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, urole, publisher, title, content, release_time, caution_college, caution_major,
+    caution_class, caution_year, caution_student, isAck
+  </sql>
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hevttc.workbench.course.mapper.CourseInfoMapper">
+  <resultMap id="BaseResultMap" type="edu.hevttc.workbench.course.domain.CourseInfo">
+    <!--@mbg.generated-->
+    <!--@Table courseinfo-->
+    <result column="studnet_id" jdbcType="VARCHAR" property="studnetId" />
+    <result column="learn_year" jdbcType="VARCHAR" property="learnYear" />
+    <result column="semester" jdbcType="CHAR" property="semester" />
+    <result column="student_name" jdbcType="VARCHAR" property="studentName" />
+    <result column="course_name" jdbcType="VARCHAR" property="courseName" />
+    <result column="course_code" jdbcType="VARCHAR" property="courseCode" />
+    <result column="score" jdbcType="DOUBLE" property="score" />
+    <result column="credit" jdbcType="DOUBLE" property="credit" />
+    <result column="rebuild" jdbcType="CHAR" property="rebuild" />
+    <result column="cousre_select" jdbcType="VARCHAR" property="cousreSelect" />
+    <result column="makeup" jdbcType="CHAR" property="makeup" />
+    <result column="year" jdbcType="VARCHAR" property="year" />
+    <result column="classes_name" jdbcType="VARCHAR" property="classesName" />
+    <result column="college_name" jdbcType="VARCHAR" property="collegeName" />
+    <result column="major_name" jdbcType="VARCHAR" property="majorName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    studnet_id, learn_year, semester, student_name, course_name, course_code, score,
+    credit, rebuild, cousre_select, makeup, `year`, classes_name, college_name, major_name
+  </sql>
+</mapper>

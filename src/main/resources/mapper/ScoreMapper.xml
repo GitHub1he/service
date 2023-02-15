@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hevttc.workbench.course.mapper.ScoreMapper">
+  <resultMap id="BaseResultMap" type="edu.hevttc.domain.Score">
+    <!--@mbg.generated-->
+    <!--@Table t_score-->
+    <result column="learn_year" jdbcType="VARCHAR" property="learnYear" />
+    <result column="semester" jdbcType="CHAR" property="semester" />
+    <result column="student_id" jdbcType="VARCHAR" property="studentId" />
+    <result column="studnet_name" jdbcType="VARCHAR" property="studnetName" />
+    <result column="course_name" jdbcType="VARCHAR" property="courseName" />
+    <result column="course_code" jdbcType="VARCHAR" property="courseCode" />
+    <result column="daily_score" jdbcType="DOUBLE" property="dailyScore" />
+    <result column="last_score" jdbcType="DOUBLE" property="lastScore" />
+    <result column="score" jdbcType="DOUBLE" property="score" />
+    <result column="notes" jdbcType="VARCHAR" property="notes" />
+    <result column="credit" jdbcType="DOUBLE" property="credit" />
+    <result column="grade_point" jdbcType="DOUBLE" property="gradePoint" />
+    <result column="rebuild" jdbcType="CHAR" property="rebuild" />
+    <result column="cousre_select" jdbcType="VARCHAR" property="cousreSelect" />
+    <result column="makeup" jdbcType="CHAR" property="makeup" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    learn_year, semester, student_id, studnet_name, course_name, course_code, daily_score,
+    last_score, score, notes, credit, grade_point, rebuild, cousre_select, makeup
+  </sql>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hevttc.basic.mapper.StudentMapper">
+  <resultMap id="BaseResultMap" type="edu.hevttc.domain.Student">
+    <!--@mbg.generated-->
+    <!--@Table t_student-->
+    <id column="studnet_id" jdbcType="VARCHAR" property="studnetId" />
+    <result column="student_name" jdbcType="VARCHAR" property="studentName" />
+    <result column="student_sex" jdbcType="VARCHAR" property="studentSex" />
+    <result column="college_name" jdbcType="VARCHAR" property="collegeName" />
+    <result column="major_name" jdbcType="VARCHAR" property="majorName" />
+    <result column="classes_name" jdbcType="VARCHAR" property="classesName" />
+    <result column="year" jdbcType="VARCHAR" property="year" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    studnet_id, student_name, student_sex, college_name, major_name, classes_name, `year`
+  </sql>
+</mapper>

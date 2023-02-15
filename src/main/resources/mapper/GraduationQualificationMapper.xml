@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hevttc.workbench.graduation.mapper.GraduationQualificationMapper">
+  <resultMap id="BaseResultMap" type="edu.hevttc.domain.GraduationQualification">
+    <!--@mbg.generated-->
+    <!--@Table t_graduation_qualification-->
+    <id column="studnet_id" jdbcType="VARCHAR" property="studnetId" />
+    <result column="studnet_name" jdbcType="VARCHAR" property="studnetName" />
+    <result column="college_name" jdbcType="VARCHAR" property="collegeName" />
+    <result column="major_name" jdbcType="VARCHAR" property="majorName" />
+    <result column="classes_name" jdbcType="VARCHAR" property="classesName" />
+    <result column="student_source" jdbcType="VARCHAR" property="studentSource" />
+    <result column="total_credits" jdbcType="DOUBLE" property="totalCredits" />
+    <result column="pub_ele_credit" jdbcType="DOUBLE" property="pubEleCredit" />
+    <result column="pro_ele_credit" jdbcType="DOUBLE" property="proEleCredit" />
+    <result column="grade_point" jdbcType="DOUBLE" property="gradePoint" />
+    <result column="chinese_qua" jdbcType="VARCHAR" property="chineseQua" />
+    <result column="computer_qua" jdbcType="VARCHAR" property="computerQua" />
+    <result column="zjg" jdbcType="VARCHAR" property="zjg" />
+    <result column="arrears" jdbcType="VARCHAR" property="arrears" />
+    <result column="graduation" jdbcType="VARCHAR" property="graduation" />
+    <result column="graduation_qua" jdbcType="VARCHAR" property="graduationQua" />
+    <result column="diploma" jdbcType="VARCHAR" property="diploma" />
+    <result column="diploma_qua" jdbcType="VARCHAR" property="diplomaQua" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    studnet_id, studnet_name, college_name, major_name, classes_name, student_source, 
+    total_credits, pub_ele_credit, pro_ele_credit, grade_point, chinese_qua, computer_qua, 
+    zjg, arrears, graduation, graduation_qua, diploma, diploma_qua
+  </sql>
+</mapper>

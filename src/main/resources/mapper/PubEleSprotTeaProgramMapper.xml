@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hevttc.basic.mapper.PubEleSprotTeaProgramMapper">
+  <resultMap id="BaseResultMap" type="edu.hevttc.domain.PubEleSprotTeaProgram">
+    <!--@mbg.generated-->
+    <!--@Table t_pub_ele_sprot_tea_program-->
+    <id column="pestp_id" jdbcType="INTEGER" property="pestpId" />
+    <result column="major_name" jdbcType="VARCHAR" property="majorName" />
+    <result column="grade" jdbcType="VARCHAR" property="grade" />
+    <result column="learn_year" jdbcType="VARCHAR" property="learnYear" />
+    <result column="semeter" jdbcType="CHAR" property="semeter" />
+    <result column="course_name" jdbcType="VARCHAR" property="courseName" />
+    <result column="course_id" jdbcType="VARCHAR" property="courseId" />
+    <result column="course_select" jdbcType="VARCHAR" property="courseSelect" />
+    <result column="course_affiliation" jdbcType="VARCHAR" property="courseAffiliation" />
+    <result column="credit" jdbcType="DOUBLE" property="credit" />
+    <result column="exam_method" jdbcType="VARCHAR" property="examMethod" />
+    <result column="teach_college" jdbcType="VARCHAR" property="teachCollege" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    pestp_id, major_name, grade, learn_year, semeter, course_name, course_id, course_select,
+    course_affiliation, credit, exam_method, teach_college
+  </sql>
+</mapper>
